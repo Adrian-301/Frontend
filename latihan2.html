@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Veloz</title>
+        <style>
+           h1 {
+            text-align: center;
+           }
+           #putih {
+            display: inline-block;
+            position: absolute;
+           }
+           #hitam {
+            display: inline-block;
+            position: relative;
+            margin: 9px 2px 0px 450px ;
+           }
+           #silver {
+            display: inline-block;
+            position: absolute;
+           }
+           #merah {
+            display: inline-block;
+            position: relative;
+            margin: 0px 2px 0px 450px ;
+           }
+           img {
+            border: 3px dashed gray;
+           }
+        </style>
+    </head>
+
+    <body>
+        <!--SPEK-->
+        <h1>TOYOTA ALL NEW VELOZ</h1>
+        <h2>1. Spesifikasi Mesin dan Interior</h2>
+        <p>Veloz menggunakan mesin berkapasitas 1.500 cc 4-silinder<br>
+            yang menghasilkan tenaga 106 HP dan torsi 137 Nm. Tenaga<br>
+            dan torsi tersebut disalurkan ke dua roda depan melalui transmisi<br>
+            CVT yang diklaim lebih responsif namun tetap irit BBM. <br><br> 
+            <img src="images/mesin.png" title="Mesin Veloz" alt="Gambar Mesin Veloz" width="40%">
+            </p>
+
+        <p>Veloz memiliki desain interior yang jauh lebih modern dibanding<br>
+            sebelumnya disertai dengan fitur yang mumpuni seperti material lunak<br>
+            di dashboard, jok kulit, serta konektivitas Apple CarPlay & Android Auto<br>
+            sehingga lebih menyenangkan untuk bepergian, baik dalam jarak dekat maupun jauh.<br><br>
+            <img src="images/interior.png" title="Interior Veloz" alt="Gambar Interior Veloz" width="40%">
+        </p>
+
+        <!--TABEL-->
+        <h2>2. Tabel Spesifikasi</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th style="background-color:grey">Varian</th>
+                    <th style="background-color:grey">Mesin</th>
+                    <th style="background-color:grey">Interior</th>
+                    <th style="background-color:grey">Harga</th>
+                </tr>
+                <tr>
+                    <td>M/T</td>
+                    <td rowspan="3">106 HP & 137 Nm</td>
+                    <td>Belum ada Apple Carplay & Android Auto</td>
+                    <td>Rp251.000.000</td>
+                </tr>
+                <tr>
+                    <td>Q CVT</td>
+                    <td rowspan="2">Sudah ada Apple Carplay & Anroid Auto</td>
+                    <td>Rp272.000.000</td>
+                </tr>
+                <tr>
+                    <td>Q CVT TSS</td>
+                    <td>Rp291.000.000</td>
+                </tr>
+            </thead>
+        </table>
+    </body>
+            <!--WARNA-->
+            <h2>3. Pilihan Warna</h2>
+                <img src="images/putih.png" width="40%" title="Platinum White Pearl" id="putih"><br>
+                <img src="images/hitam.png" width="30%" title="Dark Metallic" id="hitam"><br>
+                <img src="images/silver.png" width="40%" title="Silver Mica Metallic" id="silver"><br>
+                <img src="images/merah.png" width="40%" title="Dark Red Mica Metallic" id="merah"><br>
+            
+
+            <!--FORMULIR-->
+        <h2>4. Formulir Pemesanan</h2>
+        <form>
+            <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td><label for="nama">1. Nama Lengkap </label></td>
+                <td><input type="text" id="nama" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="notelp">2. Nomor Telepon </label></td>
+                <td><input type="tel" id="notelp" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">3. Email</label></td>
+                <td><input type="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="tipe">4. Varian </label></td>
+                <td><select id="tipe">
+                    <option>M/T</option>
+                    <option>Q CVT</option>
+                    <option>Q CVT TSS</option>
+                    </select></td>
+            </tr>
+
+                <tr>
+                    <td><label>5. Warna </label></td>
+                    <td><input type="radio" name="warna" required><label>Platinum White Pearl</label>
+                        <input type="radio" name="warna"><label>Dark Metallic</label>
+                        <input type="radio" name="warna"><label>Silver Mica Metallic</label>
+                        <input type="radio" name="warna"><label>Dark Red Mica Metallic</label></td>
+                </tr>
+
+                <tr>
+                    <td><label>6. Jumlah Unit</label></td>
+                    <td><input type="number" min="1" max="5"></td>
+                </tr>
+
+                <tr>
+                    <td><label>7. Alamat Lengkap</label></td>
+                    <td><textarea required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label>8. Aksesoris Tambahan (Opsional) </label></td>
+                    <td><input type="checkbox"><label>Bodykit </label>
+                        <input type="checkbox"><label>Kaca Film Premium </label>
+                        <input type="checkbox"><label>Spoiler Belakang </label></td>
+                </tr>
+
+                <tr>
+                    <td><label for="bukti">9. Bukti Pembayaran</label></td>
+                    <td><input type="file" accept="image/*" required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><center><button disabled type="submit" >Pesan</button></center></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
