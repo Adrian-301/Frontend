@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:rgb(0, 115, 210);
+    background:rgb(20, 80, 140);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,12 +47,12 @@ h1 {
 
 #taskInput:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: rgb(20, 80, 140);
 }
 
 #addBtn {
     padding: 12px 25px;
-    background: rgb(0, 115, 210);
+    background: rgb(20, 80, 140);
     color: white;
     border: none;
     border-radius: 8px;
@@ -132,7 +132,7 @@ h1 {
 .edit-input {
     flex: 1;
     padding: 8px;
-    border: 2px solid #667eea;
+    border: 2px solid rgb(20, 80, 140);
     border-radius: 5px;
     font-size: 16px;
     display: none;
@@ -175,12 +175,12 @@ h1 {
 }
 
 .save-btn {
-    background: #007bff;
+    background: rgb(20, 80, 140);
     color: white;
 }
 
 .save-btn:hover {
-    background: #0056b3;
+    background: rgb(20, 80, 140);
 }
 
 .cancel-btn {
