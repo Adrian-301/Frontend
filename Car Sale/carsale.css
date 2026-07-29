@@ -421,7 +421,7 @@ header.shadow #search-icon {
         background: var(--main-color);
         color: var(--bg-color);
     }
-    .navbar .active {
+    .navbar.active {
         clip-path: circle(144% at 0% 0%);
     }
     .blog-container .box {
