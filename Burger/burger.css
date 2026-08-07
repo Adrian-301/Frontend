@@ -149,4 +149,45 @@ header {
 .box-img img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.box h2 {
+    font-size: 1.2rem;
+}
+.box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+.box span {
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+.box .bx {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    background: var(--main-color);
+    border-radius: 0 0.5rem 0 0.5rem;
+    padding: 5px 8px;
+}
+.box .bx:hover {
+    background: #ffa400;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.s-box {
+    text-align: center;
+}
+.s-box img {
+    width: 60px;
+}
+.s-box h3 {
+    margin: 4px 0 10px;
 }
