@@ -94,3 +94,59 @@ header {
 .btn:hover {
     background: #ffa400;
 }
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+}
+.about-img img {
+    max-width: 80%;
+    border-radius: 0.5rem;
+}
+.about-text span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+.about-text h2 {
+    font-size: var(--h2-font);
+}
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+}
+.heading {
+    text-align: center;
+}
+.heading span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+.heading h2 {
+    font-size: var(--h2-font);
+}
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    align-items: center;
+}
+.box {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+}
+.box-img {
+    width: 200px;
+    height: 200px;
+}
+.box-img img {
+    width: 100%;
+    height: 100%;
+}
