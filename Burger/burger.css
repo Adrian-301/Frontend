@@ -191,3 +191,41 @@ header {
 .s-box h3 {
     margin: 4px 0 10px;
 }
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.connect-text span {
+    color: var(--main-color);
+    font-weight: 500;
+}
+.connect-text h2 {
+    font-size: var(--h2-font);
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+}
+.contact-box h3 {
+    margin-bottom: 1rem;
+}
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+.social i {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+.social i:hover {
+    color: var(--main-color);
+}
+.contact-box li a {
+    color: var(--text-color);
+}
+.contact-box li a:hover {
+    color: var(--main-color);
+}
